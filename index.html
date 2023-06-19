@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script  src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+   <!--nav bar-->
+
+   <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container">
+      <img src="" class="image" alt="">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav" id="sidemenu">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#services">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">CONTACT</a>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </li>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   <br>
+
+    <!-- main banner -->
+    <section class="bgimage" id="home" >
+      <div class="g-col-4 home-intro">
+      <div class="card" style="width: 18rem; background: linear-gradient(rgb(255, 4, 150), rgb(0, 0, 58));">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 ">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!--about-->
+
+    <div id="about">
+        <div class="container" style="background-color: #262626;">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- <img src="./IMAGES/user.png" alt=""> -->
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title display-4">About me</h2>
+                    <p class="lead">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati tenetur itaque quam
+                        voluptate eligendi quidem culpa, architecto sequi nisi necessitatibus ducimus assumenda sed illo
+                        voluptas consequatur deleniti molestiae explicabo unde fugit tempore? Recusandae architecto in,
+                        eveniet vero itaque, nesciunt quis neque illum alias ea nobis fugit. Corporis commodi ut culpa!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+                        <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li class="lead"><span class="h3">WEB DESIGNING</span><br>Designing web interfaces</li>
+                            <li class="lead"><span class="h3">UI/UX</span><br>Designing web interfaces</li>
+                            <li class="lead"><span class="h3">UI/UX</span><br>Designing web interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li class="lead"><span class="h3">Engineer</span><br>infoysys</li>
+                            <li class="lead"><span class="h3">UI/UX</span><br>Designing web interfaces</li>
+                            <li class="lead"><span class="h3">UI/UX</span><br>Designing web interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li class="lead"><span class="h3">2010-2020</span><br>st. xaviers</li>
+                            <li class="lead"><span class="h3">UI/UX</span><br>Designing web interfaces</li>
+                            <li class="lead"><span class="h3">UI/UX</span><br>Designing web interfaces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--about-->
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-title">My services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>WEb design</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo iusto, reprehenderit mollitia
+                        porro consequatur quae quos nemo ipsa nesciunt alias, cumque sint facere sit reiciendis dicta
+                        optio, exercitationem eaque quod!</p>
+                    <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-crop-alt"></i>
+                    <h2>WEb design</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo iusto, reprehenderit mollitia
+                        porro consequatur quae quos nemo ipsa nesciunt alias, cumque sint facere sit reiciendis dicta
+                        optio, exercitationem eaque quod!</p>
+                    <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>WEb design</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo iusto, reprehenderit mollitia
+                        porro consequatur quae quos nemo ipsa nesciunt alias, cumque sint facere sit reiciendis dicta
+                        optio, exercitationem eaque quod!</p>
+                    <a href="">learn more</a> 
+                </div>
+                     <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>WEb design</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo iusto, reprehenderit mollitia
+                        porro consequatur quae quos nemo ipsa nesciunt alias, cumque sint facere sit reiciendis dicta
+                        optio, exercitationem eaque quod!</p>
+                    <a href="">learn more</a>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">MY WORK</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./IMAGES/WhatsApp Image 2023-05-16 at 19.04.13.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem odio eos corporis beatae ex, voluptatibus neque sunt. Modi, nemo perferendis.</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./IMAGES/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem odio eos corporis beatae ex, voluptatibus neque sunt. Modi, nemo perferendis.</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./IMAGES/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem odio eos corporis beatae ex, voluptatibus neque sunt. Modi, nemo perferendis.</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn">SEE MORE</button>
+        </div>
+    </div>
+
+    <!--Contact-->
+  
+
+      <div class="container px-4 text-center">
+        <div class="row gx-5">
+          <div class="col">
+            <div id="contact">
+              <div class="container">
+                  <div class="row">
+                      <div class="contact-left">
+                          <h1 class="sub-title">CONTACT ME</h1>
+                          <p class="display-6"> <i class="fas fa-paper-plane"></i>contact@exapmle.com</p>
+                          <p class="display-6"><i class="fas fa-phone-square-alt"></i>1234567890</p>
+      
+                          <div class="social-icons">
+                              <a href=""><i class="fab fa-twitter-square"></i></a>
+                              <a href=""><i class="fab fa-facebook"></i></a>
+                              <a href=""><i class="fab fa-instagram"></i></a>
+                              <a href=""><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+         <a href="" class="btn btn2 download">DOWNLOAD CV</a>
+          </div>
+
+          <div class="col">
+            <form class= "contact-right">
+              <div class="form-row">
+                <div class="col-md-10 mb-3">
+                  <label for="validationServer01">First name</label>
+                  <input type="text" class="form-control" id="validationServer01" placeholder="First name" value="" required>
+                </div>
+                <div class="col-md-10 mb-3">
+                  <label for="validationServer02">Last name</label>
+                  <input type="text" class="form-control" id="validationServer02" placeholder="Last name" value="" required>
+                </div>
+                <div class="col-md-10 mb-3">
+                  <label for="validationServerUsername">Email</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    </div>
+                    <input type="text" class="form-control" id="validationServerUsername" placeholder="Email" aria-describedby="inputGroupPrepend3" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-10 mb-3">
+                  <label for="validationServer03">Details</label>
+                  <input type="text" class="form-control" id="validationServer03" placeholder="Details" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+                  <label class="form-check-label" for="invalidCheck3">
+                    Agree to terms and conditions
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+              <button class="btn" type="submit">Submit form</button>
+            </form>
+      
+          </div>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
