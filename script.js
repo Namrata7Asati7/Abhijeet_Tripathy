@@ -13,13 +13,17 @@ for(tabcontent of tabcontents) {
  document.getElementById(tabname).classList.add("active-tab");
 }
 
+const navbarToggle = navbar.querySelector("#navbar-toggle");
+const navbarMenu = document.querySelector("#navbar-menu");
+const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
 
-var sidemenu = document.getElementById("sidemenu");
+const toggleNavbarVisibility = () => {
+  isNavbarExpanded = !isNavbarExpanded;
+  navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+};
 
-function openmenu() {
-    sidemenu.style.right = "0";
-}
+navbarToggle.addEventListener("click", toggleNavbarVisibility);
 
-function openmenu() {
-    sidemenu.style.right = "-200px";
-}
+navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+navbarMenu.addEventListener("click", toggleNavbarVisibility);

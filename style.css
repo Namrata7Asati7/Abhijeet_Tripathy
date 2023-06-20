@@ -2,34 +2,6 @@ body {
     background: #000000;
 }
 
-nav {
-    margin-top: 20px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-
-}
-
-
-nav a {
-    transition: 0.3s ease;
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    padding: 20px 0;
-    margin: 0 5px;
-    font-size: 17px;
-}
-
-nav a:hover {
-    border-top: 4px solid #ff004f;
-    border-bottom: 4px solid #ff004f;
-    color: #ff004f;
-    padding: 6px 0;
-}
-
 .bgimage {
     height: 100vh;
     /* background: url('./IMAGES/background.png'); */
@@ -316,7 +288,6 @@ nav a:hover {
 nav .fas{
     display: none;
 }
-
 @media only screen and(max-width: 600px) {
     #header {
         background-image: url();    
@@ -330,7 +301,7 @@ nav .fas{
         font-size: 30px;
      }
 
-     nav .fas{
+      nav .fas{
         display: block;
         font-size: 25px;
     }
@@ -343,7 +314,7 @@ nav .fas{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-        transition: right 0.5s;
+         transition: right 0.5s; 
     }
 
     nav ul li{
