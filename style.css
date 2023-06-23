@@ -6,8 +6,8 @@
   font-family: "Poppins", sans-serif;
 }
 #header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url("https://coloncancernewstoday.com/wp-content/uploads/2015/03/shutterstock_248241193.jpg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), */
+      /* url("https://coloncancernewstoday.com/wp-content/uploads/2015/03/shutterstock_248241193.jpg"); */
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -64,9 +64,9 @@ svg.wave {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .about-col-1 {
     flex-basis: 35%;
+    object-position: 3px;
 }
 
 .about-col-1 img {
@@ -302,9 +302,7 @@ svg.wave {
     background: #ff004f;
 }
 /*-----------------css for small screen------*/
-nav .fas{
-    display: none;
-}
+
 @media only screen and(max-width: 600px) {
     #header {
         background-image: url();    
@@ -317,43 +315,18 @@ nav .fas{
      .header-text h1{
         font-size: 30px;
      }
-
-      /* nav .fas{
-        display: block;
-        font-size: 25px;
-    }
-    nav ul{
-        background:#ff004f;
-        position: fixed;
-        top:0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-         transition: right 0.5s; 
-    }
-
-    nav ul li{
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul .fas{
-        position: absolute;
-        top:25px;
-        left: 25px;
-        cursor: pointer;
-    } */
-
     .sub-title{
         font-size: 40px;
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
     }
-    .about-col-1{
-        margin-bottom: 30px;
+    .about-col-1 , .rounded{
+        margin: 12px;
+        width: 100%;
+        display: block;
+        object-fit:cover;
+        object-position: 100px 50px;
     }
     .about-col-2{
         font-size: 14px;
@@ -366,9 +339,6 @@ nav .fas{
         flex-basis: 100%;
     }
 
-    .about-col-1 img {
-        width: 200%;
-        margin: 5%;
-    }
-    
+
+  
 }
