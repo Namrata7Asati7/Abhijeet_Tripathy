@@ -318,13 +318,14 @@ svg.wave {
     .sub-title{
         font-size: 40px;
     }
-    .about-col-1, .about-col-2{
+     .about-col-2{
         flex-basis: 100%;
     }
-    .about-col-1 , .rounded{
-        margin: 12px;
+    .about-col-1 {
+        height: auto;
         width: 100%;
         display: block;
+        align-items: center;
         object-fit:cover;
         object-position: 100px 50px;
     }
@@ -339,9 +340,11 @@ svg.wave {
         flex-basis: 100%;
     }
 
-    #header{
+    .head1{
         padding-bottom: 30px;
     }
 
-  
+    .head{
+        text-align: center;
+    }
 }
