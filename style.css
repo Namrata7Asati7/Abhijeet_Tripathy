@@ -11,7 +11,7 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    
     position: relative;
   }
 :root {
@@ -30,10 +30,7 @@ body {
   color: var(--main-color) !important;
 }
 
-svg.wave {
-  position: absolute;
-  bottom: -70px;
-}
+
 .middle {
   display: flex;
   justify-content: start;
@@ -50,6 +47,49 @@ svg.wave {
     text-decoration: line-through;
     color: #e6b30e;
     box-shadow: inset;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient();
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.hero {
+    background-image: url('https://via.placeholder.com/1500x500');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 24px;
+}
+.portfolio {
+    text-align: center;
+    padding: 50px 0;
+}
+.portfolio img {
+    max-width: 100%;
+    height: auto;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 /*about*/
@@ -304,10 +344,6 @@ svg.wave {
 /*-----------------css for small screen------*/
 
 @media only screen and(max-width: 600px) {
-    #header {
-        background-image: url();    
-     }
-
      .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -339,12 +375,31 @@ svg.wave {
     .contact-left, .contact-right {
         flex-basis: 100%;
     }
+}    
 
-    .head1{
-        padding-bottom: 30px;
+@media (min-aspect-ratio : 16/9) {
+    .back-video{
+        padding-top: -500px;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
+}
 
-    .head{
-        text-align: center;
+@media (max-aspect-ratio : 16/9) {
+    .back-video{
+        padding-top: -500px;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: -200px;
     }
 }
