@@ -144,11 +144,12 @@ body {
     content: ' ';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #cf1297;
     position: absolute;
     left: 0;
     bottom: -8px;
     transition: 0.5s;
+    /* #ff004f */
 }
 
 .tab-links.active-link::after {
@@ -218,7 +219,7 @@ body {
 }
 
 .services-list div:hover {
-    background: linear-gradient(rgb(255, 4, 150), rgb(0, 0, 58));
+    background: linear-gradient(rgb(98, 171, 189), rgb(0, 0, 58));
     transform: translateY(-10px);
 }
 
@@ -253,7 +254,7 @@ body {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(55, 255, 255, 0), rgb(255, 4, 150), rgb(0, 0, 58));
+    background: linear-gradient(rgba(55, 255, 255, 0),rgb(98, 171, 189), rgb(0, 0, 58));
     border-radius: 10px;
     position: absolute;
     left: 0;
