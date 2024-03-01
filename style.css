@@ -60,6 +60,10 @@ body {
     padding-top: 20px;
 }
 
+.lead{
+    color: #fff;
+}
+
 .hero {
     background-image: url('https://via.placeholder.com/1500x500');
     background-size: cover;
